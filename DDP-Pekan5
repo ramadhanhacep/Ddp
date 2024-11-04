@@ -1,0 +1,58 @@
+angka_bilangan = [1,2,3,4,5,6,7,8,9]
+print(angka_bilangan)
+
+angka_bilangan.append("hello")
+print(angka_bilangan)
+
+angka_bilangan.remove(3)
+print(angka_bilangan)
+
+kontak = {"aldi": "081234567890", "ibu_budi": "08912345678", "budi": "081234566789"}
+print(kontak)
+print(type(kontak))
+
+warna_lampu = input("masukkan warna lampu: ")
+match warna_lampu:
+  case "merah":
+    print("berhenti")
+  case "kuning":
+    print("Hati-hati")
+  case "hijau":
+    print("jalan")
+  case _:
+    print("warna tidak dikenali")
+
+kendaraan = ['beat karbu', 'motor', '100', 'merah', 2]
+print(kendaraan)
+kendaraan.append("10jt")
+print(kendaraan)
+kendaraan.append("matic")
+print(kendaraan)
+kendaraan.insert(2, "honda")
+print(kendaraan)
+
+pilihan = int(input("""Pilih nomor pilihan:
+1. Menghitung luas Persegi
+2. Menghitung luas Lingkaran
+3. Menghitung luas segitiga"""))
+
+match pilihan:
+  case 1:
+     print("Menghitung luas Persegi")
+     s = int(input("Masukkan nilai sisi: "))
+     luasPersegi = s * s
+     print(f"Luas persegi dengan sisi {s} adalah {luasPersegi}")
+  case 2:
+     print("Menghitung luas Lingkaran")
+     pi = 3,14
+     r = int(input("Masukkan nilai jari-jari"))
+     luasLingkaran = pi * r ** 2
+     print(f"Luas lingkaran dengan jari-jari (r) adalah {luasLingkaran}")
+  case 3:
+     print("Menghitung luas Segitiga")
+     alas = int(input("Masukkan nilai alas: "))
+     tinggi = int(input("Masukkan nilai tinggi: "))
+     luasSegitiga = 1/2 * alas * tinggi
+     print(f"Luas Segitiga dengan alas {alas} dan tinggi {tinggi} adalah {luasSegitiga}")
+  case _:
+     print("input tidak valid")
