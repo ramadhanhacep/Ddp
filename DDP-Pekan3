@@ -1,0 +1,52 @@
+nama = "muhammad fitrah ramadhan"
+nim = "0110124224"
+rombel = "SI_07"
+notelp = "081399927658"
+alamat = "Jln.Situ Indah"
+
+print("profil pribadi")
+print("----------------")
+print("perkenalkan nama saya :", nama)
+print("saya mahasiswa dengan nim :", nim)
+print("rombel kuliah saya :", rombel)
+print("nomer telepon saya :", notelp)
+print("alamat rumah saya di :", alamat)
+print("----------------")
+
+print()
+
+nama,nim,rombel,notelp,alamat ="Syadad Muslim Kamil","0110124018","SI_09","081284787247","Jln.Kartika"
+
+print("----------------")
+print("perkenalkan teman saya :", nama)
+print("teman saya mahasiswa dengan nim :", nim)
+print("rombel kuliah teman saya :", rombel)
+print("nomer telepon teman saya :", notelp)
+print("alamat teman saya di :", alamat)
+print("----------------")
+
+print()
+
+tb = int(input("Masukkan Tinggi Badan: "))
+BBideal = (tb-100) - ((tb - 100)*0.1)
+print("Berat Badan Ideal dengan Tinggi Badan", tb, "adalah", BBideal)
+
+print()
+
+celcius = 80
+fahreinheit = (celcius * 9/5)+32
+print(f"{80}°C sama dengan {celcius * 9/5+32}°F")
+
+print()
+
+print("Program Python Hitung Luas & Volume Tabung")
+
+pi    = 22/7
+jari   = float(input("Masukan Jari-jarinya  : "))
+tinggi = float(input("Masukan Tinggginya    : "))
+volume = pi*jari*jari*tinggi
+luas   = 2*pi*jari*(jari+tinggi)
+
+print("-----------------Hasilnya-----------------")
+print("Volume Tabung         =","{:.2f}".format(volume))
+print("Luas Permukaan Tabung =","{:.2f}".format(luas)) 
